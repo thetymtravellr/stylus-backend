@@ -328,7 +328,9 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("Server Is Running");
+  res.send(`
+  <h1>Server Is Running <a href="https://facebook.com">Visit</a></h1>
+  `);
 });
 
 app.listen(port, () => {
